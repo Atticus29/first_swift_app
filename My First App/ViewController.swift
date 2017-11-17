@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBAction func Button1Clicked(_ sender: Any) {
         if let name = nameInput.text{
-                label1.text = name
+                label1.text = "Hello, " + name
         }
         
     }
