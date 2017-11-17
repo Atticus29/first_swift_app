@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var nameInput: UITextField!
+    
+    @IBAction func Button1Clicked(_ sender: Any) {
+        if let name = nameInput.text{
+                label1.text = name
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello, Mark!")
